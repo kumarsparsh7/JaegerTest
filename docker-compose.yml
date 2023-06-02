@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jaegertest:
+    image: ${DOCKER_REGISTRY-}jaegertest
+    build:
+      context: .
+      dockerfile: JaegerTest/Dockerfile
